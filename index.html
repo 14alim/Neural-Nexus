@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neural Nexus</title>
+    <link rel="icon" href="./images/logo-black.png" type="image/icon type">
+
+    <!-- Tailwind  -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <style>
+        .font-poppins {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+
+</head>
+
+<body class="font-poppins ">
+    <header>
+        <!-- Navbar Section -->
+        <nav>
+            <div class="navbar bg-[#FEFCED]">
+                <div class="flex-1">
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 text-base shadow bg-base-100 rounded-box w-52">
+                            <li><a>Chatbot</a></li>
+                            <li><a>Smart Assistant</a></li>
+                            <li><a>Language Translator</a></li>
+                            <li><a>Email Filtering</a></li>
+
+                        </ul>
+                    </div>
+                    <img src="images/long-logo.png" alt="" width="200px" class="lg:ml-8">
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu text-base menu-horizontal px-1">
+                        <li><a>Chatbot</a></li>
+                        <li><a>Smart Assistant</a></li>
+                        <li><a>Language Translator</a></li>
+                        <li><a>Email Filtering</a></li>
+
+                    </ul>
+                </div>
+                <div class="lg:mr-8">
+                    <a class="btn btn-primary bg-[#210A7] text-white">Login</a>
+                </div>
+            </div>
+        </nav>
+        <!-- Banner Section -->
+        <section>
+            <div class="hero min-h-screen bg-[#FEFCED]">
+                <div class="hero-content flex-col lg:flex-row-reverse ">
+                    <div class="width:300px">
+                        <img src="./images/banner.png" class="lg:ml-32 mb-10" />
+                    </div>
+                    <div>
+                        <h1 class="text-2xl lg:text-7xl font-bold">N A T U R A L <br>
+                            L A N G U A G E <br>
+                            P R O C E S S I N G</h1>
+                        <!-- Open the modal using ID.showModal() method -->
+                        <button class="btn btn-primary bg-[#210A7] mt-5"
+                            onclick="my_modal_5.showModal()">Details</button>
+                        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                            <form method="dialog" class="modal-box">
+                                <h3 class="font-bold text-xl"> Natural Language Process</h3>
+                                <p class="py-4">Natural Language Processing (NLP) is a branch of artificial intelligence
+                                    focused on making computers understand, interpret, and interact with human language.
+                                    It involves creating algorithms and systems that enable machines to read,
+                                    understand, and generate text, enabling applications like language translation,
+                                    chatbots, and sentiment analysis.</p>
+                                <div class="modal-action">
+                                    <!-- if there is a button in form, it will close the modal -->
+                                    <button class="btn">Close</button>
+                                </div>
+                            </form>
+                        </dialog>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <menu class="md:container md:mx-auto">
+
+        <!-- Language Translator -->
+        <div class="hero min-h-screen bg-[#FAF2B5] my-10">
+            <div class="hero-content flex-col lg:flex-row">
+              <img src="./images/translation.png" class="max-w-sm rounded-lg shadow-2xl mb-10 lg:mr-24" width="400px" />
+              <div class="max-w-xl">
+                <h1 class="text-5xl font-bold text-center">LANGUAGE <br>
+                    TRANSLATOR</h1>
+                <p class="py-6 text-center">A language translator is a technology that converts text or speech from one language into another, allowing people who speak different languages to communicate and understand each other. It employs sophisticated algorithms, often based on NLP and machine learning techniques, to ensure accurate and meaningful translation between languages. Language translators are used in various contexts, such as international business, travel, and online communication, to bridge language barriers and facilitate global interaction.</p>
+                <p class="text-center"><button class="btn btn-primary mt-5 ">Explore More</button></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- SMART AsSISTANT -->
+        <div class="hero min-h-screen bg-[#E2B2FF] my-10">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+              <img src="./images/assistant.png" class="max-w-sm rounded-lg shadow-2xl mb-10 lg:ml-24" width="400px" />
+              <div class="max-w-xl">
+                <h1 class="text-5xl font-bold text-center">SMART <br> ASSISTANT</h1>
+                <p class="py-6 text-center">A smart assistant is an AI-powered technology designed to perform tasks, answer questions, and provide information or services to users through natural language interactions. These interactions can be in the form of voice commands or text inputs. Smart assistants, like Siri, Google Assistant, and Alexa, use advanced NLP and machine learning algorithms to understand user intent, retrieve relevant information, and execute tasks such as setting reminders, sending messages, playing music, and controlling smart home devices. They are integrated into various devices, including smartphones, smart speakers, and other internet-connected gadgets, to enhance user convenience and productivity.</p>
+                <p class="text-center"><button class="btn btn-primary ">Explore More</button></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- CHATBOT -->
+        <div class="hero min-h-screen bg-[#A767FF] my-10">
+            <div class="hero-content flex-col lg:flex-row">
+              <img src="./images/chatbot.png" class="max-w-sm rounded-lg shadow-2xl mb-10 lg:mr-24" width="400px" />
+              <div class="max-w-xl">
+                <h1 class="text-5xl font-bold text-center">CHATBOT</h1>
+                <p class="py-6 text-center">A chatbot is a computer program designed to simulate human conversation through text or voice interactions. It uses natural language processing (NLP) and artificial intelligence (AI) techniques to understand and respond to user inputs in a conversational manner. Chatbots can be found on websites, messaging platforms, and apps, and they serve a variety of purposes, such as answering customer queries, providing information, assisting with tasks, and even offering entertainment. They aim to provide efficient and automated interactions, enhancing user experiences and streamlining communication processes..</p>
+                <p class="text-center"><button class="btn btn-primary ">Explore More</button></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- EMAIL FILTERING -->
+        <div class="hero min-h-screen bg-[#F0D200] my-10">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+              <img src="./images/email.png" class="max-w-sm rounded-lg shadow-2xl mb-10 lg:ml-24" width="400px" />
+              <div class="max-w-xl">
+                <h1 class="text-5xl font-bold text-center">EMAIL <br> FILTERING</h1>
+                <p class="py-6 text-center">
+                    Email filtering is a process of automatically categorizing and managing incoming emails based on predefined criteria. It involves using algorithms and rules to sort emails into different folders or categories, such as inbox, spam, promotions, and more. The goal of email filtering is to prioritize important messages, reduce clutter, and block or divert unwanted or malicious emails. Filtering techniques include analyzing sender information, subject lines, content, attachments, and even the user's past interactions. This technology helps users manage their email communication more effectively by ensuring that relevant messages are easily accessible while minimizing the impact of unwanted or potentially harmful content.</p>
+                <p class="text-center"><button class="btn btn-primary ">Explore More</button></p>
+              </div>
+            </div>
+          </div>
+
+    </menu>
+
+    <!-- Footer Section -->
+  <footer class=" footer footer-center p-5 lg:p-10 bg-[#121212] text-base-content rounded">
+    <div class="flex lg:mt-24">
+      <img class="w-[50px]" src="./images/logo.png" alt="">
+      <a class="btn btn-ghost normal-case text-xl text-white">Neural Nexus</a>
+    </div>
+    <div class="flex flex-wrap justify-center gap-10 text-white">
+      <a class="link link-hover">Home</a> 
+      <a class="link link-hover">About us</a> 
+      <a class="link link-hover">Phone</a> 
+      <a class="link link-hover">Email</a> 
+      <a class="link link-hover">Message</a>
+      <a class="link link-hover">My Account</a>
+    </div> 
+    <div>
+      <div class="flex flex-wrap gap-4 md:gap-10 lg:gap-10">
+        <a href="">
+          <img src="icons/twitter 1.png" alt=""> 
+      </a>
+      <a href="">
+        <img src="icons/facebook 1.png" alt="">
+      </a>
+      <a href="">
+        <img src="icons/instagram 1.png" alt="">
+      </a>
+      <a href="">
+        <img src="icons/Group 49.png" alt="">
+      </a>
+      <a href="">
+        <img src="icons/linkedin 1.png" alt="">
+      </a>
+      <a href="">
+        <img src="icons/apple 1.png" alt="">
+      </a>
+      
+      </div>
+    </div> 
+    <div>
+      <p>Copyright © 2023 - All right reserved by Neural Nexus</p>
+    </div>
+  </footer>
+</body>
+
+</html>
+
+
